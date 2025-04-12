@@ -1,0 +1,60 @@
+.advice-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .advice-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  /* Responsive Grid */
+.advice-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 10px;
+  }
+  
+  .card {
+    background: #ededed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width:80%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .card img {
+    width: 70%;
+    height: 62%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    mix-blend-mode: multiply; /* Removes white backgrounds */
+    /* OR */
+    filter: brightness(1.1) contrast(1.1); /* Helps remove light gray backgrounds */
+  }
+  
+  .card h2 {
+    margin: 15px 0;
+    color: #64aaa7;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    color: #000000;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  #h{
+    color: #64aaa7;
+  }
